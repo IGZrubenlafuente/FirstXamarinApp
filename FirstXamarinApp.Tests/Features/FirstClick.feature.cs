@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace FirstXamarinApp.Tests
+namespace FirstXamarinApp.Tests.Features
 {
     using TechTalk.SpecFlow;
     

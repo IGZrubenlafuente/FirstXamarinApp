@@ -59,9 +59,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommonSteps.cs" />
-    <Compile Include="FirstClickFeature.cs" />
-    <Compile Include="FirstClick.feature.cs">
+    <Compile Include="Steps\CommonSteps.cs" />
+    <Compile Include="Features\FirstClickFeature.cs" />
+    <Compile Include="Features\FirstClick.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FirstClick.feature</DependentUpon>
@@ -70,14 +70,14 @@
     <Compile Include="Screens\Home\IHomeScreen.cs" />
     <Compile Include="Screens\Home\iOSHomeScreen.cs" />
     <Compile Include="Screens\ScreenNames.cs" />
-    <Compile Include="HomeSteps.cs" />
+    <Compile Include="Steps\HomeSteps.cs" />
     <Compile Include="FeatureBase.cs" />
     <Compile Include="AppInitializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="FirstClick.feature">
+    <None Include="Features\FirstClick.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>FirstClick.feature.cs</LastGenOutput>
     </None>

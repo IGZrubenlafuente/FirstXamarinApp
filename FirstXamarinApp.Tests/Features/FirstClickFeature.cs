@@ -1,7 +1,7 @@
 ﻿using Xamarin.UITest;
 using NUnit.Framework;
 
-namespace FirstXamarinApp.Tests
+namespace FirstXamarinApp.Tests.Features
 {
     //we complete the partial class (auto-generated in the feature.cs file) by extending from FeatureBase
     //this way we can start the app
