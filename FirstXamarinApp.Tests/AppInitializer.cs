@@ -1,8 +1,6 @@
 ﻿using System;
-using System.IO;
-using System.Linq;
 using Xamarin.UITest;
-using Xamarin.UITest.Queries;
+using TechTalk.SpecFlow;
 
 namespace FirstXamarinApp.Tests
 {
@@ -25,7 +23,19 @@ namespace FirstXamarinApp.Tests
             }
 
             throw new ArgumentException("Unsupported platform " + platform);
-        } 
+        }
+
+        public static void InitializeScreens(Platform platform)
+        {
+            if (platform == Platform.Android)
+            {
+                FeatureContext.Current.Add(ScreenNames.Home, new AndroidHomeScreen());
+            }
+            else if (platform == Platform.iOS)
+            {
+                FeatureContext.Current.Add(ScreenNames.Home, new iOSHomeScreen());
+            } 
+        }
     }
 }
 

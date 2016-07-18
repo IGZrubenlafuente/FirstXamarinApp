@@ -25,6 +25,7 @@ namespace FirstXamarinApp.Tests
             app = AppInitializer.StartApp(platform);
             //we add the app to the context so it can be used in the Steps files
             FeatureContext.Current.Add("App", app);
+            AppInitializer.InitializeScreens(platform);
         }
 
     }

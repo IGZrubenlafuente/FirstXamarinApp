@@ -59,13 +59,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonSteps.cs" />
     <Compile Include="FirstClickFeature.cs" />
     <Compile Include="FirstClick.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FirstClick.feature</DependentUpon>
     </Compile>
-    <Compile Include="Steps.cs" />
+    <Compile Include="Screens\Home\AndroidHomeScreen.cs" />
+    <Compile Include="Screens\Home\IHomeScreen.cs" />
+    <Compile Include="Screens\Home\iOSHomeScreen.cs" />
+    <Compile Include="Screens\ScreenNames.cs" />
+    <Compile Include="HomeSteps.cs" />
     <Compile Include="FeatureBase.cs" />
     <Compile Include="AppInitializer.cs" />
   </ItemGroup>

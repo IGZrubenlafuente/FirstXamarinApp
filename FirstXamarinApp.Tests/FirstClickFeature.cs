@@ -17,7 +17,6 @@ namespace FirstXamarinApp.Tests
         public void IClick1Time()
         {
             app.WaitForElement(c => c.Id("myButton"));
-            //app.EnterText(c => c.Marked("creditCardNumberText"), new string('9', 15));
             app.Tap(c => c.Id("myButton"));
             app.WaitForElement(c => c.Id("myButton").Text("You clicked 1 times"));
         }
